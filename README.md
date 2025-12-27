@@ -20,12 +20,7 @@ This academic research project implements a machine learning-based diabetes pred
 
 ## 🚀 Quick Start
 
-### Prerequisites
-
-- Python 3.8 or higher
-- pip package manager
-
-### Installation
+### Option 1: Run Locally
 
 1. **Clone or download this repository**
 
@@ -44,6 +39,22 @@ This academic research project implements a machine learning-based diabetes pred
 4. **Access the application:**
    - The app will automatically open in your browser
    - Or navigate to: `http://localhost:8501`
+
+### Option 2: Deploy Online (Recommended)
+
+**Deploy on Streamlit Cloud (FREE):**
+
+1. Go to https://share.streamlit.io/
+2. Sign in with GitHub
+3. Click "New app"
+4. Select repository: `mohammadNafia/unii`
+5. Main file: `diabetes_prediction_app.py`
+6. Click "Deploy"
+
+Your app will be live at: `https://[your-app-name].streamlit.app`
+
+> **Note:** Vercel does NOT support Streamlit apps. Use Streamlit Cloud instead.
+> See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
 
 ## 💻 Usage
 
