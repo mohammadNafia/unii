@@ -1,13 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction System - Streamlit App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #000000 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 600px;
+            background: rgba(26, 26, 46, 0.8);
+            padding: 3rem;
+            border-radius: 16px;
+            border: 2px solid rgba(0, 255, 255, 0.3);
+            box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #00ffff;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+            letter-spacing: -1px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #00d4ff;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .message {
+            font-size: 1rem;
+            color: #d1d5db;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        
+        .streamlit-link {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
+            border: 2px solid #00ffff;
+            color: #00ffff;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            margin: 1rem;
+        }
+        
+        .streamlit-link:hover {
+            background: linear-gradient(135deg, rgba(0, 255, 255, 0.2) 0%, rgba(0, 212, 255, 0.2) 100%);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        .info-box {
+            background: rgba(255, 170, 0, 0.1);
+            border: 1px solid rgba(255, 170, 0, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            color: #ffaa00;
+        }
+        
+        .info-box p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .github-link {
+            color: #6b7280;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            display: inline-block;
+        }
+        
+        .github-link:hover {
+            color: #00ffff;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .pulse {
+            animation: pulse 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ METABOLIC PROFILE ANALYZER</h1>
+        <div class="subtitle">Neural Prediction Engine v2.0</div>
+        
+        <div class="message">
+            <p><strong>This is a Streamlit application.</strong></p>
+            <p>Vercel cannot run Streamlit apps (they require a long-running Python server).</p>
+            <p>Please access the app on Streamlit Cloud:</p>
+        </div>
+        
+        <a href="https://share.streamlit.io" class="streamlit-link pulse" target="_blank">
+            🚀 Deploy on Streamlit Cloud
+        </a>
+        
+        <div class="info-box">
+            <p><strong>⚠️ How to Access the App:</strong></p>
+            <p>1. Go to <a href="https://share.streamlit.io" style="color: #00ffff;" target="_blank">share.streamlit.io</a></p>
+            <p>2. Sign in with GitHub</p>
+            <p>3. Deploy from repository: <strong>mohammadNafia/unii</strong></p>
+            <p>4. Main file: <strong>diabetes_prediction_app.py</strong></p>
+        </div>
+        
+        <a href="https://github.com/mohammadNafia/unii" class="github-link" target="_blank">
+            📂 View on GitHub →
+        </a>
+    </div>
+    
+    <script>
+        // Optional: Auto-redirect if Streamlit Cloud URL is known
+        // Uncomment and update URL when you deploy to Streamlit Cloud
+        /*
+        const streamlitUrl = 'https://your-app-name.streamlit.app';
+        if (streamlitUrl && streamlitUrl !== 'https://your-app-name.streamlit.app') {
+            setTimeout(() => {
+                window.location.href = streamlitUrl;
+            }, 3000);
+        }
+        */
+    </script>
+</body>
 </html>
+
