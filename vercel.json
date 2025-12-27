@@ -1,0 +1,7 @@
+{
+  "buildCommand": "echo 'This project uses Streamlit Cloud, not Vercel. Please deploy at https://share.streamlit.io'",
+  "outputDirectory": ".",
+  "framework": null,
+  "ignoreCommand": "exit 1"
+}
+
